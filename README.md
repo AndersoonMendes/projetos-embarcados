@@ -1,45 +1,62 @@
-# 👋 Olá! Eu sou Anderson Mendes
+# 👋 Olá, eu sou Anderson Mendes
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas** e estagiário como desenvolvedor Full Stack.  
-Neste GitHub compartilho meus **projetos de sistemas embarcados e eletrônica**, mostrando prática e evolução no desenvolvimento com Arduino, ESP32, STM32 e outros microcontroladores.
-
----
-
-## 🎯 Objetivo
-- Demonstrar habilidades em **programação de microcontroladores**.  
-- Praticar integração de **hardware e software**.  
-- Criar um **portfólio organizado** para vagas de estágio ou aprendizado contínuo.  
+Sou estudante de **Engenharia Eletrônica** e **Análise e Desenvolvimento de Sistemas** e formado como **Técnico em Eletrônica**, apaixonado por **sistemas embarcados, programação em C/C++ e desenvolvimento de soluções tecnológicas**.  
+Este repositório serve como meu **portfólio de projetos pessoais e acadêmicos**, além de mostrar minha evolução na área de tecnologia.
 
 ---
 
-## 💼 Mini Currículo
-- **Formação:** Ensino Médio completo; cursando ADS.  
-- **Experiência:** Estagiário Full Stack (PHP, Insomnia, REST APIs).  
-- **Habilidades:** C/C++, Arduino, ESP32, Git/GitHub, lógica de programação, desenvolvimento de pequenos projetos de IoT e automação.  
+## 🧑‍💻 Sobre mim
+- 🎓 Atualmente curso **Engenharia Eletrônica(UEA)** e **ADS(Uninter)**.  
+- 🔧 Experiência prática com **C/C++, Arduino, ESP32, Python, Web e Mobile**.  
+- 🌐 Interesse em **Sistemas Embarcados, IoT, Automação, Desenvolvimento Web/Mobile e integração de sistemas**.  
+- 🚀 Sempre buscando aprender e criar novos projetos que unam teoria e prática.  
 
 ---
 
-## 📂 Projetos
+## 📂 Projetos em destaque
 
-| Projeto | Descrição | Linguagem/Plataforma |
-|---------|-----------|--------------------|
-| Blink LED | LED piscando no Arduino para aprendizado básico | C++/Arduino |
-| Mini Piano | Piano com 8 botões e buzzer no Arduino | C++/Arduino |
-| Sensor de Temperatura | Leitura de sensor e envio serial | C++/Arduino |
-| [Em breve...] | [Ideias futuras] | [Linguagem/Plataforma] |
+### 🎵 Mini Piano em Arduino
+Um projeto simples que simula um **Mini Piano com um Arduino UNO**. 
 
-> Cada pasta do projeto contém:
-> - `firmware/` → código fonte  
-> - `hardware/` → esquema do circuito  
-> - `README.md` → explicando como montar e rodar  
+Composto por 8 botões coloridos que representam uma **Oitava Completa**. 
 
----
+Ao ser acionado um botão, sua nota correspondente irá tocar no buzzer.
 
-## 🚀 Contato
-- Email: seu-email@exemplo.com  
-- LinkedIn: [link do LinkedIn]  
-- GitHub: [https://github.com/AndersoonMendes/projetos-embarcados](https://github.com/AndersoonMendes/projetos-embarcados)
+📌 [Ver código](./project-02-mini-piano/)  
+
+### 💡 Outros projetos em desenvolvimento
+- 😴 **Sistema Detector de Sono para Motorista**.  
+- 🐾 **Alimenteador Automático para Pets**.  
 
 ---
 
-> 💡 Dica: este README funciona como uma **vitrine viva**, você vai atualizando à medida que conclui novos projetos.
+## 📜 Experiência
+
+- **Projeto de Conclusão de Curso (Técnico em Eletrônica, 2023)**  
+  Desenvolvimento de um Sistema para auxiliar o deficiente visual a se locomover com um transporte público.  
+  - Tecnologias usadas: C++, Firebase, MySQL, PHP, ESP32.  
+  - Resultados: Sistema funcional apresentado, aprovado como TCC e nomeado com premiações internas.  
+
+- **Projetos Acadêmicos (2021 – 2023)**  
+  Participação em diferentes trabalhos práticos durante o curso técnico.  
+  - Protótipos com Arduino: Estufa inteligente, Sistema de rastreamento de motos e etc...  
+  - Vivência com desenvolvimento em equipe, liderança e apresentação de soluções.  
+
+---
+
+## 🛠️ Tecnologias e Ferramentas
+- **Linguagens:** C, C++, Python, PHP e JavaScript (básico)  
+- **Hardware:** Arduino, ESP32, sensores e módulos embarcados  
+- **Ferramentas:** Git/GitHub, VS Code, Arduino IDE e Firebase   
+- **Outros:** Bancos de dados básicos, noções de IoT, RTOS (básico)  
+
+---
+
+## 📫 Contato
+- 💼 **[LinkedIn](https://www.linkedin.com/in/anderson-mendes-8970932a0)**  
+- 📧 **amdc.andersonm@gmail.com**  
+- 📌 GitHub: [AndersoonMendes](https://github.com/AndersoonMendes)  
+
+---
+
+⭐ **Este portfólio está em constante atualização, acompanhe para ver novos projetos!**
