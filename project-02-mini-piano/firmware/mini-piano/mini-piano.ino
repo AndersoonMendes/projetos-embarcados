@@ -1,42 +1,46 @@
 /**
-   Mini piano for Arduino.
+Projeto 02 - Mini Piano
 
-   You can control the colorful buttons with your keyboard:
-   After starting the simulation, click anywhere in the diagram to focus it.
-   Then press any key between 1 and 8 to play the piano (1 is the lowest note,
-   8 is the highest).
+Autor: Anderson Mendes
 
-   Copyright (C) 2021, Uri Shaked. Released under the MIT License.
+Descrição: Este projeto implementa um mini piano utilizando o Arduino.
+São 8 botões coloridos, cada um representando uma nota musical (de Dó até Dó da oitava seguinte).
+Quando um botão é pressionado, o Arduino gera o tom correspondente em um buzzer/speaker conectado ao pino 8.
 */
 
-#include "pitches.h"
+#include "pitches.h" // incluindo a bibilioteca responsável pelas constantes de frequência das notas musicais 
 
-#define SPEAKER_PIN 8
+#define BUZZER_PIN 8 
+// definindo o pino do buzzer
 
-const uint8_t buttonPins[] = { 12, 11, 10, 9, 7, 6, 5, 4 };
+const pinButton buttonPins[] = { 12, 11, 10, 9, 7, 6, 5, 4 }; // definindo os pinos dos botões
+
 const int buttonTones[] = {
   NOTE_C4, NOTE_D4, NOTE_E4, NOTE_F4,
   NOTE_G4, NOTE_A4, NOTE_B4, NOTE_C5
-};
-const int numTones = sizeof(buttonPins) / sizeof(buttonPins[0]);
+}; // definindo as notas que serão utilizadas e orrespondendo a cada botão
+
+const int numTones = sizeof(buttonPins) / sizeof(buttonPins[0]); // definindo a quantidade de notas que serão utilizadas
 
 void setup() {
-  for (uint8_t i = 0; i < numTones; i++) {
+  for (pinButton i = 0; i < numTones; i++) {
     pinMode(buttonPins[i], INPUT_PULLUP);
-  }
-  pinMode(SPEAKER_PIN, OUTPUT);
+  } // declarando cada botão como input_pullup, para evitar o uso de resistores externos
+   
+  pinMode(BUZZER_PIN, OUTPUT); // decalranndo o buzzer como saída
 }
 
 void loop() {
-  int pitch = 0;
-  for (uint8_t i = 0; i < numTones; i++) {
+  int pitch = 0; // define a nota atual a ser tocada, recebe zero, pois não há nenhuma nota a ser tocada no início do programa
+  for (pinButton i = 0; i < numTones; i++) {
     if (digitalRead(buttonPins[i]) == LOW) {
       pitch = buttonTones[i];
-    }
+    } // analisa os botões, verificando se algum foi pressionado, se sim, a variável pitch salva a nota correspondente
   }
   if (pitch) {
-    tone(SPEAKER_PIN, pitch);
+    tone(BUZZER_PIN, pitch); // se algum botão foi pressionado, o buzzer toca a nota correspodente de pitch
   } else {
-    noTone(SPEAKER_PIN);
+    noTone(BUZZER_PIN); // se nenhum foi pressionado, não toca nenhuma nota
   }
+   // retorna ao loop
 }
