@@ -53,7 +53,7 @@ Ao ser acionado um botão, sua nota correspondente irá tocar no buzzer.
 ## 📫 Contato
 - 💼 **[LinkedIn](https://www.linkedin.com/in/anderson-mendes-8970932a0)**  
 - 📧 **amdc.andersonm@gmail.com**  
-- 📌 GitHub: [AndersoonMendes](https://github.com/AndersoonMendes)  
+- 📌 **GitHub: [AndersoonMendes](https://github.com/AndersoonMendes)**  
 
 ---
 
