@@ -13,7 +13,7 @@ Quando um botão é pressionado, o Arduino gera o tom correspondente em um buzze
 #define BUZZER_PIN 8 
 // definindo o pino do buzzer
 
-const pinButton buttonPins[] = { 12, 11, 10, 9, 7, 6, 5, 4 }; // definindo os pinos dos botões
+const uint8_t buttonPins[] = { 12, 11, 10, 9, 7, 6, 5, 4 }; // definindo os pinos dos botões
 
 const int buttonTones[] = {
   NOTE_C4, NOTE_D4, NOTE_E4, NOTE_F4,
@@ -23,7 +23,7 @@ const int buttonTones[] = {
 const int numTones = sizeof(buttonPins) / sizeof(buttonPins[0]); // definindo a quantidade de notas que serão utilizadas
 
 void setup() {
-  for (pinButton i = 0; i < numTones; i++) {
+  for (uint8_t i = 0; i < numTones; i++) {
     pinMode(buttonPins[i], INPUT_PULLUP);
   } // declarando cada botão como input_pullup, para evitar o uso de resistores externos
    
@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
   int pitch = 0; // define a nota atual a ser tocada, recebe zero, pois não há nenhuma nota a ser tocada no início do programa
-  for (pinButton i = 0; i < numTones; i++) {
+  for (uint8_t i = 0; i < numTones; i++) {
     if (digitalRead(buttonPins[i]) == LOW) {
       pitch = buttonTones[i];
     } // analisa os botões, verificando se algum foi pressionado, se sim, a variável pitch salva a nota correspondente
