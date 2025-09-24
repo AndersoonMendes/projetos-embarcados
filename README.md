@@ -16,10 +16,8 @@ Este repositório serve como meu **portfólio de projetos pessoais e acadêmicos
 ## 📂 Projetos em destaque
 
 ### 🎵 Mini Piano em Arduino
-Um projeto simples que simula um **Mini Piano com um Arduino UNO**. 
-
-Composto por 8 botões coloridos que representam uma **Oitava Completa**. 
-
+Um projeto simples que simula um **Mini Piano com um Arduino UNO**.  
+Composto por 8 botões coloridos que representam uma **Oitava Completa**.  
 Ao ser acionado um botão, sua nota correspondente irá tocar no buzzer.
 
 📌 [Ver código](./project-02-mini-piano/)  
