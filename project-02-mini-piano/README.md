@@ -5,7 +5,6 @@ Este projeto implementa um **mini piano** utilizando o Arduino.
 São **8 botões coloridos**, cada um representando uma nota musical (de **Dó** até **Dó da oitava seguinte**).  
 Quando um botão é pressionado, o Arduino gera o tom correspondente em um **buzzer/speaker** conectado ao pino **8**.  
 
-Código original criado por [Uri Shaked](https://github.com/wokwi), adaptado para uso didático.
 
 ---
 
@@ -51,3 +50,4 @@ const int buttonTones[] = {
   NOTE_C4, NOTE_D4, NOTE_E4, NOTE_F4,
   NOTE_G4, NOTE_A4, NOTE_B4, NOTE_C5
 };
+
