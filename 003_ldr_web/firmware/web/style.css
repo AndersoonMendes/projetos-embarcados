@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #000; /* fundo preto */
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+canvas {
+  width: 700px !important;
+  height: 300px !important; /* altura do gráfico */
+  margin-top: 20px;
+}
