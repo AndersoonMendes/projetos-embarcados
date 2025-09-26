@@ -15,12 +15,20 @@ Este repositório serve como meu **portfólio de projetos pessoais e acadêmicos
 
 ## 📂 Projetos em destaque
 
+### 💡 Gráfico de Luminosidade com Arduino
+
+Um projeto que monitora a **luminosidade ambiente** usando um **sensor LDR** conectado ao **Arduino UNO**.  
+Os valores do LDR são enviados via Serial e exibidos em **tempo real** em um **gráfico web**, usando **Web Serial API** e **Chart.js**.  
+
+📌 [Ver código](./003_ldr_web/)
+
+
 ### 🎵 Mini Piano em Arduino
 Um projeto simples que simula um **Mini Piano com um Arduino UNO**.  
 Composto por 8 botões coloridos que representam uma **Oitava Completa**.  
 Ao ser acionado um botão, sua nota correspondente irá tocar no buzzer.
 
-📌 [Ver código](./project-02-mini-piano/)  
+📌 [Ver código](./002_mini_piano/)  
 
 ### 💡 Outros projetos em desenvolvimento
 - 😴 **Sistema Detector de Sono para Motorista**.  
